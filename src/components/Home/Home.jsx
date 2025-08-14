@@ -48,7 +48,9 @@ function Home() {
       </div>
       {/* About */}
       <div className="m-0 bg-amber-50">
-        <h1 className="text-3xl ">Who am I ?</h1>
+        <div className="flex items-center justify-center">
+        <h1 className="text-5xl font-extrabold  ">Who Am I ?</h1></div>
+
       </div>
     </>
   );
