@@ -2,15 +2,38 @@ import React from "react";
 import back from "../../assets/asset1.jpg";
 import videoBg from "../../assets/back.mp4";
 import chachu from "../../assets/chachu.jpg";
-import scroll from "../../assets/mouse.svg"
+import scroll from "../../assets/mouse.svg";
 import { useNavigate } from "react-router";
-
-
+import person1 from "../../assets/person1.jpg"
+import person2 from "../../assets/person2.jpeg"
+import person3 from "../../assets/person3.jpg"
+import left from "../../assets/left.png"
+import right from "../../assets/right.png"
 function Home() {
   const navigate = useNavigate();
   function LeadToServices() {
-    navigate("/services")
+    navigate("/services");
   }
+  const testimonials = [
+  {
+    name: "James Carter",
+    role: "Startup Founder",
+    image: person1, // import at top
+    text: "The team made the entire compliance process so smooth and stress-free. I can now focus on growing my business without worrying about legal hurdles!"
+  },
+  {
+    name: "Priya Sharma",
+    role: "Small Business Owner",
+    image: person2,
+    text: "They handle everything with such professionalism and clarity. I finally feel confident that my company is 100% compliant and in good hands!"
+  },
+  {
+    name: "Michael Lee",
+    role: "Entrepreneur",
+    image: person3,
+    text: "Their expertise saved me hours of paperwork and headaches. If you want peace of mind in running your company, this is the team to trust."
+  }
+];
   return (
     <>
       <div className="m-0 p-0 w-full h-[calc(100vh-64px)] relative overflow-hidden">
@@ -68,8 +91,8 @@ function Home() {
       </div>
       {/* About */}
       <div className="m-0 bg-amber-50">
+          <br /><br />
         <div className="flex items-center justify-center">
-          <br />
           <h1 className="text-5xl font-extrabold  ">Who Am I ?</h1>
         </div>
         <br />
@@ -96,8 +119,39 @@ function Home() {
         </div>
       </div>
       {/* Testimonials */}
-      
-      
+
+      <br />
+      <div className="">
+        <h1 className="text-4xl font-bold text-center">
+          {" "}
+          Customer Testimonials
+        </h1>
+        
+        <div className="flex justify-between m-20">
+          {testimonials.map((i,index)=>(
+          <div
+           key={index} className="w-[30%] border-black order-2 bg-amber-50 shadow-xl p-10 aspect-square ">
+            <div className="justify-center text-center">
+              <div className="flex justify-center items-center">
+              <img className="w-20 h-20 rounded-full" src={i.image} alt={i.name} />
+              </div>
+              <br />
+              <h2 className="text-2xl font-bold">{i.name}</h2>
+              <h3 className="text-xl font-bold">{i.role}</h3>
+              <br />
+              <p><img src={right} className="w-20" alt="right" /> {i.text} </p>
+              
+                <div className="flex justify-end">
+                <img src={left} className="w-20" alt="left" /></div>
+            </div>
+          </div>
+          
+         
+          ))}
+          
+        </div>
+        
+      </div>
     </>
   );
 }
