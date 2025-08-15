@@ -7,7 +7,7 @@ function Services() {
       <div className="flex flex-row flex-nowrap gap-5 relative justify-center mt-15 items-center">
         <div className="w-[30%] border-black order-1 p-10 bg-pink-50 shadow-2xl aspect-square ">
           <div className="justify-center text-center">
-            <div className=" flex h-12 w-12 bg-blue-200 text-[var(--primary-color)] mx-auto rounded-full items-center justify-center ">
+            <div className="flex h-12 w-12 bg-blue-200 text-[var(--primary-color)] mx-auto rounded-full items-center justify-center ">
               <svg
                 class="h-6 w-6"
                 fill="none"
