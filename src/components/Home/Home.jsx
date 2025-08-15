@@ -84,7 +84,7 @@ const services = [
        <div className="bg-white py-10">
       <h1 className="text-3xl font-bold text-center mb-6">Our Services</h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 m-4 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {services.map((service) => (
           <div
             key={service.id}
@@ -194,7 +194,7 @@ const services = [
       Your query has been sent successfully!
     </p>
   )}
-</form>
+</form><br />
       {/* About */}
       <div className="m-0 bg-amber-50">
           <br /><br />
