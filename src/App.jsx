@@ -15,11 +15,11 @@ function App() {
   },[])
   return (
     <>
-    {loader?<Loader />:<>
+    {/* {loader?<Loader />:<> */}
       <Header />
       <Outlet />
       <Footer />
-    </>}
+    {/* </>} */}
     </>
   )
 }
