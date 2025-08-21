@@ -208,16 +208,8 @@ const services = [
         <br />
         <div className="flex gap-32 justify-center text-center px-10">
           <p className="ml-7 text-black font-bold max-w-xl">
-            I'm Chandan Arora, a CS Practioner. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. <br /> Aut quo quam animi tempore
-            doloremque eos dolores soluta, eligendi recusandae ducimus delectus,{" "}
-            <br /> hic natus libero expedita laudantium, blanditiis nihil itaque
-            rerum. Rerum nisi harum <br /> tempore cum excepturi, veniam sint
-            praesentium sit quis magni hic tenetur?
-            <br /> Cumque! Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. <br /> Dolorem odio quo suscipit, obcaecati officia velit{" "}
-            <br />
-            magnam distinctio saepe. Dignissimos, magnam.
+            I'm Chandan Arora, a CS Practioner. 
+            I am a qualified Company Secretary dedicated to helping businesses stay compliant, transparent, and future-ready. <br /> My focus is on guiding companies through corporate laws, governance practices, and regulatory requirements with clarity and precision. <br /> From incorporation to board meetings, filings to audits, I ensure that every step is legally sound and strategically aligned. <br /> My mission is simple—empowering businesses to grow with confidence while upholding the highest standards of governance and trust.
           </p>
           <img
             src={chachu}
